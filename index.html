@@ -5,6 +5,11 @@
     </script>
 <div style="margin-top: 100%;">
     <!-- hitwebcounter Code START -->
-    <a href="https://www.hitwebcounter.com" target="_blank">
-    <img src="https://hitwebcounter.com/counter/counter.php?page=19960916&style=0001&nbdigits=5&type=ip&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a> 
+    <div id="visits"></div>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=19963827&style=0038&nbdigits=5&type=page&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a>     
 </div>
+<script>
+    var visited = localStorage.getItem('visited');
+    if(!visited)
+    document.getElementById("visits").innerHTML = `<a href="https://www.hitwebcounter.com" target="_blank">`;
+</script>
